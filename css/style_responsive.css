@@ -36,6 +36,10 @@
     .nav-list.clicked li {
 display: block;
 
+
+    }
+    .nav-list.clicked li a:hover{
+        text-decoration: underline;
     }
     .span-list, .logo{
         display: inline-block;
@@ -57,4 +61,57 @@ display: block;
     .logo h1{
         padding: 15px;
     }
+    /*==================== About ME page ===================*/
+.AboutMe{
+    flex-direction: column;
+}
+.AboutMe .picture .top, .AboutMe .picture .bottom, .AboutMe .btn{
+    display: none;
+}
+.AboutMe .text{
+    width: 100%;
+}
+.social-media1{
+    display: none;
+}
+.AboutMe .text h1{
+    padding-top: 20px;
+}
+.AboutMe .text p{
+    width: 85%;
+    font-size: 25px;
+    line-height: 30px;
+}
+.AboutMe .picture {
+    width: 100%;
+}
+.AboutMe .picture img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+.AboutMe .social-media-responsive a{
+    color: white;
+    font-size: 30px;
+   
+}
+.AboutMe .social-media-responsive a:hover{
+    font-size: 40px;
+    transition: all 0.4s;
+}
+.AboutMe .social-media-desktoop{
+    display: none;
+}
+.AboutMe .social-media-responsive{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.AboutMe h3{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 50;
+}
 }
