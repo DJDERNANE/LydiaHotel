@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilda Display', serif;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+}
+.main-parent{
+   
+    background-image: url(../imgs/background.png);
+    background-size: 100%;
+    background-position: center;
+}
+.header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    width: 160px;
+    height: 40px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 13px;
+    font-size: 15px;
+}
+.btns{
+    margin-left: 30px;
+}
+.btns button{
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 6px;
+    border: white solid 1.6px;
+    border-radius: 4px;
+}
+.btns button:last-child{
+    background-color: transparent;
+    color: white;
+}
+.fond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    color: white;
+    font-size: 30px;
+}
+.fond p{
+    font-size: 25px;
+    padding: 13px;
+}
+.fond button{
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    border: white 1.8px solid;
+    color: white;
+    font-size: 20px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.lydiacity{
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+.lydiacity form{
+    position: absolute;
+    top: -55px;
+    margin: auto;
+    width: 65%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 40px ;
+}
+.lydiacity form h1{
+    font-size: 45px;
+    text-shadow: black 2px 2px 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.lydiacity form h6{
+    font-family: 'Gilda Display', serif;
+    margin: 3px;
+}
+.formulaire{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px;
+}
+.formulaire div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.formulaire div input{
+    width: 220px;
+    height: 30px;
+    border: none;
+}
+.formulaire div select{
+    height: 32px;
+    width: 220px;
+    background-color: white;
+    border: none;
+    margin: 2px;
+}
+.lydiacity form .agree{
+    width: 85%;
+    text-align: left;
+}
+.lydiacity form .btn {
+    width: 85%;
+    text-align: left;
+}
+.lydiacity form .btn button{
+    width: 280px;
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    background-color: #1E1E1E;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.about{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    height: 60vh;
+}
+.about .txt{
+    width: 45%;
+}
+.about .txt p{
+    color: #535353;
+    line-height: 23px;
+    font-weight: 100;
+}
+.about .txt h1, .service-parent h1, .achivement-parent h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.about .txt h6, .service-parent h6,.achivement-parent h6{
+    color: #535353;
+    margin-bottom: 5px;
+    font-size: 15px;
+    word-spacing: 4px;
+}
+.about .pic{
+    width: 40%;
+    position: relative;
+}
+.about .pic img{
+    width: 200px;
+    height: 255px;
+    position: absolute;
+}
+.about .pic img:first-child{
+    top: 0;
+    left: 0;
+}
+.about .pic img:last-child{
+    bottom: 0;
+    right: 0;
+}
+.service-parent{
+    background-color:  #F5F5F5;
+    padding: 40px 140px;
+}
+.services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.services .child{
+    margin: 20px;
+    border: #9b9b9b solid 1px;
+    padding: 10px 30px;
+    width: 250px;
+    height: 200px;
+}
+.services .child p{
+    font-size: 12px;
+    color: #535353;
+    
+}
+.achivement-parent{
+    width: 80%;
+    margin: auto;
+    padding: 90px 0px;
+}
+.achivement{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+}
+.achivement img{
+    width: 180px;
+    height: 180px;
+}
+.achivement-parent button{
+    height: 50px;
+    width: 250px;
+    font-size: 17px;
+    background-color: white;
+    border: #535353 solid 1.5px;
+}
