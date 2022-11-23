@@ -1,117 +1,156 @@
-@media only screen and (max-width: 800px) {
-    .header.clicked{
-       
-        height: 100%;
-        display: flex;
+@media screen and (max-width:1000px) and (min-width:800px) {
+
+    .navbar ul li a{
+        font-size: 13px;
+        margin: 10px;
+    }
+    .btns{
+        margin-left: 20px;
+    }
+    .btns button{
+        height: 30px;
+        padding: 6px 9px;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .footer{
         flex-direction: column;
-        align-items: center;
-    }
-    .header-parent{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 12.7vh;
-    }
-    .nav-list{
-        height: 0px;   
-        width: 0%; 
-        
     }
     
-    .nav-list.clicked{
+
+
+    .services{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 85vh;
-        width: 100%;
-        transition: all 1.5s;
+        flex-wrap: wrap;
     }
-    .nav-list li {
+    .services .child{
+        width: 150px;
+        height: 280px;
+    }
+    
+}
+@media screen and  (max-width:1100px) and (min-width:800px){
+    .footer{
+        flex-direction: column;
+    }
+    .rooms .item{
+        width: 80%;
+        margin: 60px;
+    }
+}
+@media screen and  (max-width:800px){
+    .contact-form{
         display: none;
-        font-size: 30px;
-        margin-top: 20px;
     }
-    .nav-list.clicked li {
-display: block;
-
-
-    }
-    .nav-list.clicked li a:hover{
-        text-decoration: underline;
-    }
-    .span-list, .logo{
-        display: inline-block;
-    }
-    .span-list{
+    .footer-parent {
+        background-color: #1E1E1E;
         display: flex;
+        justify-content: center;
+    }
+    .gallery{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .coment{
         flex-direction: column;
-        float: right;
-        padding: 2px;
-        
     }
-    .span-child{
-        width: 40px;
-        height: 3px;
-        border-radius: 3px;
-        background-color: white;
-        margin: 3px;
+    .coment .child{
+        width: 80%;
+        margin: 20px 0px;
     }
-    .logo h1{
-        padding: 15px;
+    .specialite div p{
+        font-size: 12px;
     }
-    /*==================== About ME page ===================*/
-.AboutMe{
-    flex-direction: column;
+    .Specialite-parent{
+        padding: 90px 0px;
+    }
+    .achivement-parent{
+        padding: 170px 0px;
+    }
+    .services .child {
+        width: 35%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .txt{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+   .about .pic{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+   }
+   .fond h1{
+    text-align: center;
+    font-size: 45px;
+   }
+   .formulaire{
+    grid-template-columns: auto auto;
+   }
+   .lydiacity{
+        padding: 50px 0px;
+   }
+   .fond button{
+    margin-top: 40px;
 }
-.AboutMe .picture .top, .AboutMe .picture .bottom, .AboutMe .btn{
-    display: none;
-}
-.AboutMe .text{
-    width: 100%;
-}
-.social-media1{
-    display: none;
-}
-.AboutMe .text h1{
-    padding-top: 20px;
-}
-.AboutMe .text p{
-    width: 85%;
-    font-size: 25px;
-    line-height: 30px;
-}
-.AboutMe .picture {
-    width: 100%;
-}
-.AboutMe .picture img{
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-}
-.AboutMe .social-media-responsive a{
-    color: white;
-    font-size: 30px;
+.rooms .item .desc {
+   
+    bottom: -80px;
+    padding: 22px;
+    left: 9px;
+    right: 9px;
    
 }
-.AboutMe .social-media-responsive a:hover{
-    font-size: 40px;
-    transition: all 0.4s;
+.item .desc p{
+    font-size: 12px;
 }
-.AboutMe .social-media-desktoop{
+.item .desc h2{
+    font-size: 20px;
+}
+.item button{
+    font-size: 10px;
+}
+   .navbar{
     display: none;
-}
-.AboutMe .social-media-responsive{
+   }
+   .services .child p{
+    font-size: 11px;
+   }
+   .listbtn{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 3px;
 }
-.AboutMe h3{
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 50;
+.listbtn span{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 3px;
 }
+}
+@media screen and  (max-width:550px){
+    .footer{
+        flex-direction: column;
+    }
+    .services .child {
+        width: 80%;
+    }
+    .formulaire{
+        grid-template-columns: auto ;
+       }
+       
+       .lydiacity{
+        height: 130vh;
+       }
+       .lydiacity form h1{
+        text-align: center;
+       }
+       .services .child p{
+        font-size: 13px;
+       }
+    
 }
