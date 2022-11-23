@@ -62,7 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 100%;
     color: white;
     font-size: 30px;
 }
@@ -165,7 +165,7 @@
     justify-content: space-between;
     margin: auto;
     padding: 20px;
-    padding: 80px 0px;
+    padding: 100px 0px;
 }
 .about .txt{
     width: 45%;
@@ -217,7 +217,7 @@
 .services{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .services .child{
     margin: 10px;
@@ -242,7 +242,7 @@
     justify-content: flex-start;
     align-items: center;
     height: max-content;
-    padding: 100px 0px;
+    padding: 30px 0px;
     flex-wrap: wrap;
 }
 .achivement img{
@@ -303,6 +303,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: space-between;
 }
 .rooms .item{
     width: 430px;
@@ -340,7 +341,8 @@
     padding: 8px 10px;
 }
 .client-parent{
-    height: 450px;
+    height: max-content;
+    padding: 40px 0px;
     display: flex;
     align-items: center;
     color: white;
@@ -355,17 +357,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 50px 0px;
 
 }
-.child{
-    margin: 35px;
+.coment .child{
     border: #F5F5F5 solid 0.8px;
     padding: 10px 20px;
     background-image: url('../imgs/bg.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 220px;
-    
+    width: 20%;
 }
 .child .compte{
     display: flex;
@@ -476,7 +477,7 @@
     background-color: #F5F5F5;
     color: black;
     position: absolute;
-    right: 80px;
+    right: 40px;
     bottom: 80px;
     height: max-content;
     width: 400px;
@@ -542,4 +543,7 @@
     margin: 15px 0px;
     font-size: 15px;
     font-weight: 600;
+}
+.listbtn{
+    display: none;
 }
