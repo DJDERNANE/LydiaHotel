@@ -12,8 +12,9 @@
 .main-parent{
    
     background-image: url(../imgs/background.png);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .header{
     display: flex;
@@ -89,7 +90,7 @@
     position: absolute;
     top: -55px;
     margin: auto;
-    width: 65%;
+    width: 78%;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -109,28 +110,37 @@
 .formulaire{
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 20px;
+    width: 90%;
+    padding: 30px;
 }
 .formulaire div{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    justify-content: space-between;
+    width:95%;
+    margin: 15px;
+}
+.formulaire div label{
+    margin: 8px;
 }
 .formulaire div input{
-    width: 220px;
+    width: 90%;
     height: 30px;
     border: none;
+    padding: 5px 8px;
 }
 .formulaire div select{
-    height: 32px;
-    width: 220px;
+    height: 40px;
+    width: 95%;
     background-color: white;
     border: none;
-    margin: 2px;
+
+    padding: 5px 8px;
 }
 .lydiacity form .agree{
     width: 85%;
     text-align: left;
+    margin: 5px 0px;
 }
 .lydiacity form .btn {
     width: 85%;
@@ -155,7 +165,7 @@
     justify-content: space-between;
     margin: auto;
     padding: 20px;
-    height: 60vh;
+    padding: 80px 0px;
 }
 .about .txt{
     width: 45%;
@@ -165,16 +175,20 @@
     line-height: 23px;
     font-weight: 100;
 }
-.about .txt h1, .service-parent h1, .achivement-parent h1{
+.about .txt h1, .service-parent h1, .achivement-parent h1,.specialite div h1, .rooms-parent h1, .gallery h1{
     margin-bottom: 20px;
     font-size: 40px;
 }
-.about .txt h6, .service-parent h6,.achivement-parent h6{
+.about .txt h6, .service-parent h6,.achivement-parent h6, .rooms-parent h6, .gallery h6{
     color: #535353;
     margin-bottom: 5px;
     font-size: 15px;
     word-spacing: 4px;
 }
+.service-parent .services h6{
+    font-size: 20px;
+}
+
 .about .pic{
     width: 40%;
     position: relative;
@@ -194,18 +208,23 @@
 }
 .service-parent{
     background-color:  #F5F5F5;
-    padding: 40px 140px;
+    padding: 80px 0px;
+}
+.service-child {
+    width: 80%;
+    margin: auto;
 }
 .services{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .services .child{
-    margin: 20px;
+    margin: 10px;
     border: #9b9b9b solid 1px;
-    padding: 10px 30px;
-    width: 250px;
-    height: 200px;
+    padding: 15px 20px;
+    width: 25%;
+    height: 250px;
 }
 .services .child p{
     font-size: 12px;
@@ -220,13 +239,16 @@
 .achivement{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    height: 350px;
+    height: max-content;
+    padding: 100px 0px;
+    flex-wrap: wrap;
 }
 .achivement img{
     width: 180px;
     height: 180px;
+    margin: 8px;
 }
 .achivement-parent button{
     height: 50px;
@@ -234,4 +256,289 @@
     font-size: 17px;
     background-color: white;
     border: #535353 solid 1.5px;
+}
+.Specialite-parent{
+    background-image: url('../imgs/imgs.svg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    padding: 50px 0px;
+    
+}
+.specialite{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+.specialite div{
+    width: 80%;
+    margin: auto;
+}
+.specialite div p{
+    line-height: 25px;
+    margin-top: 20px;
+}
+.specialite div h6, .client h6{
+    margin-bottom: 5px;
+    font-size: 15px;
+    word-spacing: 4px;
+    color: white;
+}
+.rooms-parent{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+.rooms{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.rooms .item{
+    width: 430px;
+    height: 380px;
+    margin: 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.rooms .item img{
+    width: 100%;
+    height: 100%;
+}
+.rooms .item .desc{
+    background-color: rgba(245, 245, 245, 0.9);
+    position: absolute;
+    width: 80%;
+    bottom: -80px;
+    padding: 22px;
+    left: 20px;
+    right: 20px;
+    
+}
+.item .desc p{
+    color: #535353;
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.item .desc h2{
+    margin-bottom: 0px;
+}
+.item button{
+    background-color: transparent;
+    border: #1E1E1E 1px solid;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+.client-parent{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #1E1E1E    ;
+}
+.client{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.coment{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.child{
+    margin: 35px;
+    border: #F5F5F5 solid 0.8px;
+    padding: 10px 20px;
+    background-image: url('../imgs/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.child .compte{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    padding: 10px;
+}
+.child .compte img{
+    width: 40px;
+    height: 40px;
+}
+.child .compte p{
+    margin: 8px;
+}
+.child h6{
+    font-size: 16px;
+}
+.child p{
+    font-size: 12px;
+    color: #e1e1e1;
+    padding: 5px;
+}
+.gallery{
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 150px;
+}
+.pics{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: auto auto auto;
+    margin-top: 40px ;
+}
+.pics img{
+    width: 95%;
+    height: 95%;
+}
+.pics img:first-child{
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+.pics img:last-child{
+    grid-area: 2 / 3 / span 2 / span 1;
+    height: 92%;
+}
+.footer-parent{
+    background-color: #1E1E1E;
+}
+.footer{
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    width: 80%;
+    margin: auto;
+    padding: 70px;
+}
+.links ,.contact{
+    width: 300px;
+    height: 100%;
+    margin: 10px;
+    font-family: 'Barlow' 'Condensed';
+}
+.links ul, .contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.links ul li {
+    margin: 8px 0px ;
+}
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.links h2 , .contact h2{
+    margin: 15px;
+}
+.contact{
+    font-family: 'Barlow' 'Condensed';
+}
+.contact ul li{
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+}
+.contact ul li div{
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    margin-right: 8px;
+}
+.contact ul li div img{
+    width: 15px;
+    height: 18px;
+    padding: 3px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  15px;
+    background-color: #F5F5F5;
+    color: black;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    height: max-content;
+    width: 400px;
+}
+.contact-form h1{
+    font-size: 30px;
+    margin: 10px;
+    
+}
+.contact-form h6{
+    font-size: 10px;
+    margin-top: 15px;
+}
+.contact-form form{
+    width: 80%;
+    margin: auto;
+}
+.contact-form form .contactus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.contact-form form .contactus div{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 5px 0px;
+}
+.contact-form form .contactus div label{
+    font-size: 14px;
+    font-family: 'Barlow' 'Condensed';
+    margin: 8px 0px;
+}
+.contact-form form .contactus div input{
+    width: 90%;
+    height: 15px;
+    padding: 7px 10px;
+}
+.contact-form form .contactus .selection{
+    width: 30%;
+}
+.contact-form form .contactus .selection select{
+    height: 28px;
+    padding: 7px 10px;
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+.contact-form .agree{
+    font-size: 17px;
+   
+    font-family: 'Barlow' 'Condensed';
+    margin: 10px 0px;
+}
+
+.btn button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #1E1E1E;
+    color: white;
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 600;
 }
