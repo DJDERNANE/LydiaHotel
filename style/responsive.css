@@ -124,14 +124,92 @@
     cursor: pointer;
     padding: 3px;
 }
+.listbtn.active span:nth-child(2){
+    visibility: hidden;
+}
+.listbtn.active span:first-child, .listbtn.active span:last-child{
+    transition: all 1s;
+}
+.listbtn.active span:first-child{
+    transform: rotate(45deg) translateY(11.5px) ;
+    
+}
+.listbtn.active span:last-child{
+    transform: rotate(-45deg) translateY(-11.5px) ;
+
+}
 .listbtn span{
-    width: 40px;
+    width: 35px;
     height: 3px;
     background-color: white;
     border-radius: 3px;
     margin: 3px;
+    
+}
+.header.active{
+    background-color: #0e0037;
+}
+.navbar.active{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.navbar.active ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+.navbar.active ul li {
+    margin: 20px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+.btns button{
+    margin: 20px 0px;
+   
+}
+.header .parent{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 55px;
+}
+.header{
+    flex-direction: column;
+    position: fixed;
+    z-index: 10000;
+}
+.logo img {
+    width: 120px;
+    height: 30px;
+}
+.lydiacity form .btn button{
+    width: 60%;
+    font-size: 15px;
+    height: 30px;
+}
+.specialite div h6{
+    font-size: 12px;
+}
+.specialite div h1{
+    font-size: 30px;
+}
+.specialite div p{
+    font-size: 10px;
+}
+.rooms .item .desc{
+    left: 0px;
 }
 }
+
 @media screen and  (max-width:550px){
     .footer{
         flex-direction: column;
@@ -152,5 +230,6 @@
        .services .child p{
         font-size: 13px;
        }
+       
     
 }
