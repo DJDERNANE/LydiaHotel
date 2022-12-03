@@ -1,508 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
+@media screen and (max-width:1000px) and (min-width:800px) {
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYDIA Hotel</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/responsive.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-</head>
-
-<body >
-    <div class="main-parent">
-        <div class="main">
-            <div class="header" id="headtop">
-                <div class="parent">
-                    <div class="logo">
-                        <img src="imgs/logo.png" alt="">
-                    </div>
-                    <div class="listbtn" id="btnlist">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-               
-                <div class="navbar" id="navbar">
-                    <ul>
-                        <li>
-                            <a href="">
-                                HOME
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                ROOMS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                GALLERY
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                CONTACT US
-                            </a>
-                        </li>
-                       
-                    </ul>
-                    <div class="btns">
-                        <button>BOOK NOW </button>
-                        <button>HOTEL WITH FLIGHT </button>
-                    </div>
-
-                </div>
-                
-            </div>
-            <div class="fond up">
-                <p>Indoors & Outdoors</p>
-                <h1>Enjoy a Luxury Lxperience</h1>
-                <button>ROOMS & SUITS </button>
-            </div>
-
-        </div>
-    </div>
+    .navbar ul li a{
+        font-size: 13px;
+        margin: 10px;
+    }
+    .btns{
+        margin-left: 20px;
+    }
+    .btns button{
+        height: 30px;
+        padding: 6px 9px;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .footer{
+        flex-direction: column;
+    }
     
 
-    <div class="lydiacity up">
-        <form action="">
-            <h6>ONE OF THE BEST PLACES TO RELAX & ENJOY</h6> 
-            <h1>Lydia City Hotel Rhodes</h1> 
-            <div class="formulaire">
-                <div>
-                    <label for="">Your Name:</label>
-                    <input type="text" placeholder="Enter Your Name">
-                </div>
-                <div>
-                    <label for="">Email:</label>
-                    <input type="text" placeholder="Your Email ID">
-                </div>
-                <div>
-                    <label for="">Check In:</label>
-                    <input type="date" placeholder="Date">
-                </div>
-                <div>
-                    <label for="">Check Out:</label>
-                    <input type="date" placeholder="Date">
-                </div>
-                <div>
-                    <label for="">Rooms:</label>
-                    <select name="" id="" placeholder="select">
-                        <option value="" selected>Select</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="">Adults:</label>
-                    <input type="text" placeholder="Adult Persones ">
-                </div>
-            </div>
-            <div class="agree">
-                <input type="checkbox" name="" id="read">
-                <label for="read">I have read and agree with the terms</label>
-            </div>
-            <div class="btn">
-                <button>SEND</button> 
-            </div>   
-        </form>
-    </div>
 
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services .child{
+        width: 150px;
+        height: 280px;
+    }
+    
+}
+@media screen and  (max-width:1100px) and (min-width:800px){
+    .footer{
+        flex-direction: column;
+    }
+    .rooms .item{
+        width: 80%;
+        margin: 60px;
+    }
+}
+@media screen and  (max-width:800px){
+    .contact-form{
+        display: none;
+    }
+    .footer-parent {
+        display: flex;
+        justify-content: center;
+    }
+    .gallery{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .coment{
+        flex-direction: column;
+    }
+    .coment .child{
+        width: 80%;
+        margin: 20px 0px;
+    }
+    .specialite div p{
+        font-size: 12px;
+    }
+    .Specialite-parent{
+        padding: 90px 0px;
+    }
+    .achivement-parent{
+        padding: 170px 0px;
+    }
+    .services .child {
+        width: 35%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .txt{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+   .about .pic{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+   }
+   .fond h1{
+    text-align: center;
+    font-size: 45px;
+   }
+   .formulaire{
+    grid-template-columns: auto auto;
+   }
+   .lydiacity{
+        padding: 50px 0px;
+   }
+   .fond button{
+    margin-top: 40px;
+}
+.rooms .item .desc {
+   
+    bottom: -80px;
+    padding: 22px;
+    left: 9px;
+    right: 9px;
+   
+}
+.item .desc p{
+    font-size: 12px;
+}
+.item .desc h2{
+    font-size: 20px;
+}
+.item button{
+    font-size: 10px;
+}
+   .navbar{
+    display: none;
+   }
+   .services .child p{
+    font-size: 11px;
+   }
+   .listbtn{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 3px;
+}
+.listbtn.active span:nth-child(2){
+    visibility: hidden;
+}
+.listbtn.active span:first-child, .listbtn.active span:last-child{
+    transition: all 1s;
+}
+.listbtn.active span:first-child{
+    transform: rotate(45deg) translateY(11.5px) ;
+    
+}
+.listbtn.active span:last-child{
+    transform: rotate(-45deg) translateY(-11.5px) ;
 
-    <div class="about">
-        <div class="txt left">
-            <h6>ABOUT LYDIA HOTEL</h6>
-            <h1>Enoy a luxury experience</h1>
-            <p>Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis imperdiet auctor id aliquet. Morbi dignissim scelerisque est erat. <br>
-                Tincidunt eu porta vivamus id magnis tellus volutpat aliquet. Velit ut non vitae ornare. Pretium interdum volutpat bibendum malesuada odio nulla tellus. Tortor cursus quam elit sagittis in. Arcu ut magna arcu sit. Leo dignissim neque luctus ornare volutpat neque. Morbi integer aliquam fermentum diam ac. Nunc.</p>
-        </div>
-        <div class="pic right">
-            <img src="imgs/img1.svg" alt="">
-            <img src="imgs/img2.svg" alt="">
-        </div> 
-    </div>
+}
+.listbtn span{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 3px;
+    
+}
+.header.active{
+    background-color: #0e0037;
+}
+.navbar.active{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.navbar.active ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+.navbar.active ul li {
+    margin: 20px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+.btns button{
+    margin: 20px 0px;
+   
+}
+.header .parent{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 55px;
+}
+.header{
+    flex-direction: column;
+    position: fixed;
+    z-index: 10000;
+}
+.logo img {
+    width: 120px;
+    height: 30px;
+}
+.lydiacity form .btn button{
+    width: 60%;
+    font-size: 15px;
+    height: 30px;
+}
+.specialite div h6{
+    font-size: 12px;
+}
+.specialite div h1{
+    font-size: 30px;
+}
+.specialite div p{
+    font-size: 10px;
+}
+.rooms .item .desc{
+    left: 0px;
+}
+}
 
-
-    <div class="service-parent">
-        <div class="service-child">
-            <h6>WHAT WE PROVIDE</h6>
-        <h1>Our Services</h1>
-        <div class="services">
-            <div class="child up">
-                <img src="imgs/sleep.svg" alt="">
-                <h6>Room Service</h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                </p>
-            </div>
-            <div class="child up">
-                <img src="imgs/bain.svg" alt="">
-                <h6>Luxury Bathroom</h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                </p>
-            </div>
-            <div class="child up">
-                <img src="imgs/tv.svg" alt="">
-                <h6>Setellite Television Set </h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                </p>
-            </div>
-            <div class="child up">
-                <img src="imgs/wifi.svg" alt="">
-                <h6>Wifi</h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                </p>
-            </div>
-            <div class="child up">
-                <img src="imgs/cofee.svg" alt="">
-                <h6>Cofee</h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                </p>
-            </div>
-            <div class="child up">
-                <img src="imgs/sleep.svg" alt="">
-                <h6>Baekfast</h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                </p>
-            </div>
-            
-        </div>
-        </div>
-        
-        
-    </div>
-
-
-    <div class="achivement-parent">
-        <h6>AWARDS</h6>
-        <h1>Our Achievements</h1>
-        <div class="achivement swiper mySwiper">
-            <div class="swiper-wrapper">
-                <img class="swiper-slide" src="imgs/img3.svg" alt="" >
-                <img  class="swiper-slide" src="imgs/img5.svg" alt="">
-                <img class="swiper-slide" src="imgs/img6.svg" alt="">
-                <img class="swiper-slide" src="imgs/img6.svg" alt="">
-                <img class="swiper-slide" src="imgs/img6.svg" alt="">
-            </div>
-            
-        </div>
-        <button>VISITE THE SITE</button>
-    </div>
-
-    <div class="Specialite-parent">
-        <div class="specialite up">
-            <div>
-                <h6>WHY CHOOSE US?</h6>
-                <h1>Our Specialities</h1>
-                <p>Situated at the very heart of Rhodes town, the hotel provides easy access to all major points of interest all within walking distance.
-                    The hotel is renowned in the local market due to its operation which “runs” 365 days a year. All rooms have been renovated recently and offer a unique design with modern furnishes. Being in constant operation for the last 47 years, and gone through numerous renovations the hotel operates mainly with repeaters who value and appreciate its comfort, cleanliness, family attitude, amenities and personality just to name a few.
-                    On line booking is available through mainstream agencies or directly with the hotel, with its own platform at www.lydiahotel.com were various offers are available all through the year.  <br>
-                    Our reception operates 24 hours and 7 days a week, making check in or providing information a breeze. All the information one might need for sightseeing the island either by boat, bike, car or motorbike is available there. Tickets for shows, boat trips or museums are also available, as well as car hire from the hotels own rental company, offering lower rates than any competitor local or otherwise.
-                </p>
-         
-            </div>
-             </div>
-
-    </div>
-
-    <div class="rooms-parent">
-        <h6>RELAX AND ENJOY</h6>
-        <h1>Our Hotel Rooms</h1>
-        <div class="rooms">
-            <div class="item up">
-                <img src="imgs/pic1.svg" alt="">
-                <div class="desc">
-                    <h2>Apartment for 4 adults</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc.
-                    </p>
-                    <button>READ MORE</button>
-                </div>
-
-            </div>
-            <div class="item up">
-                <img src="imgs/pic2.svg" alt="">
-                <div class="desc">
-                    <h2>Single Room</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc.
-                    </p>
-                    <button>READ MORE</button>
-                </div>
-
-            </div>
-            <div class="item up">
-                <img src="imgs/pic3.svg" alt="">
-                <div class="desc">
-                    <h2>Double Room</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc.
-                    </p>
-                    <button>READ MORE</button>
-                </div>
-
-            </div>
-            <div class="item right">
-                <img src="imgs/pic1.svg" alt="">
-                <div class="desc">
-                    <h2>Superior Double Room</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc.
-                    </p>
-                    <button>READ MORE</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="client-parent">
-        <div class="client">
-            <h6>LOVELY PEOPLE - AMAZING EXPERIENCES</h6>
-            <h1>what our client say about us?</h1>
-            <div class="coment">
-                <div class="child up">
-                    <div class="compte">
-                         <img src="imgs/client.svg" alt=""> 
-                        <p>meureen1830</p>
-                    </div>
-                   
-                    <h6>Excellent</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                    </p>
-                </div>
-                <div class="child up">
-                    <div class="compte">
-                         <img src="imgs/client.svg" alt=""> 
-                        <p>meureen1830</p>
-                    </div>
-                   
-                    <h6>Excellent</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                    </p>
-                </div>
-                <div class="child up">
-                    <div class="compte">
-                         <img src="imgs/client.svg" alt=""> 
-                        <p>meureen1830</p>
-                    </div>
-                   
-                    <h6>Excellent</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Pretium gravida non integer magna. Nibh facilisi eget justo tristique. Nunc purus vehicula curabitur egestas. Vel eget est semper ut. Nibh duis nec in at nulla sit. Congue ut commodo eu nunc. Tincidunt proin nec lobortis 
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-
-    </div>
-
-    <div class="gallery-parent">
-        <div class="gallery">
-            <h6>Hotel’s Beauty</h6>
-            <h1>Our Gallery</h1>
-            <div class="pics">
-                <img src="imgs/pic7.svg" alt="">
-                <img src="imgs/pic8.svg" alt="">
-                <img src="imgs/pic8.svg" alt="">
-                <img src="imgs/pic1.svg" alt="">
-                <img src="imgs/pic2.svg" alt="">
-                <img src="imgs/pic1.svg" alt="">
-                <img src="imgs/pic4.svg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-parent">
-        <div class="footer">
-            <div class="links">
-                <h2>Quik Links</h2>
-                <ul>
-                    <li>
-                        <a href="">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Testimonials
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Our Properties
-                        </a>
-                    </li>  
-                    <li>
-                        <a href="">
-                            Contact Us
-                        </a>
-                    </li>   
-                </ul>
-            </div>
-            <div class="contact">
-                <h2>Contact Info</h2>
-                <ul>
-                    <li>
-                        <div><img src="imgs/phone.svg" alt=""> </div>
-                        <p>(+30) 2241022871-2</p>
-                    </li>
-                    <li>
-                        <div><img src="imgs/localisation.svg" alt=""></div>
-                        <p>25is Martiou 31-35, Rhodes 851 00</p> 
-                    </li>
-                    <li>
-                        <div><img src="imgs/email.svg" alt=""></div>
-                        <p>nfo@lydiahotel.gr</p> 
-                    </li>
-                </ul>
-            </div>
-            <div class="contact-form">
-                <h6>ONE OF THE BEST PLACES TO RELAX & ENJOY</h6>
-                <h1>Lydia city hotel rhodes</h1>
-                <form action="">
-                    <div class="contactus">
-                        <div>
-                            <label for="">Your Name:</label>
-                            <input type="text" placeholder="Enter Your Name">
-                        </div>
-                        <div>
-                            <label for="">Email:</label>
-                            <input type="text" placeholder="Your Email ID">
-                        </div>
-                        <div>
-                            <label for="">Check In:</label>
-                            <input type="date" placeholder="Date">
-                        </div>
-                        <div>
-                            <label for="">Check Out:</label>
-                            <input type="date" placeholder="Date">
-                        </div>
-                        <div class="selection">
-                            <label for="">Rooms:</label>
-                            <select name="" id="" placeholder="select">
-                                <option value="" selected>Select</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                            </select>
-                        </div>
-                        <div class="selection">
-                            <label for="">Adults:</label>
-                            <select name="" id="">
-                                <option value="" selected>selecte</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">+4</option>
-                            </select>
-                        </div>
-                        <div class="selection">
-                            <label for="">child:</label>
-                            <select name="" id="">
-                                <option value="" selected>selecte</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">+4</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="agree">
-                        <input type="checkbox" name="" id="read">
-                        <label for="read">I have read and agree with the terms</label>
-                    </div>
-                    <div class="btn">
-                        <button>SEND</button> 
-                    </div>   
-                </form>
-            </div>
-        </div>
-        
-    </div>
-
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        var slideUp = {
-            distance: '50px',
-            origin: 'bottom',
-            opacity: null,
-            delay: 150,
-            reset: true,
-            opacity:0,
-            duration: 600
-        };
-        var slideright = {
-            distance: '20px',
-            origin: 'right',
-            opacity: null,
-            delay: 150,
-            reset: true,
-            opacity:0,
-            duration: 800
-        };
-        var slideleft = {
-            distance: '20px',
-            origin: 'left',
-            opacity: null,
-            delay: 150,
-            reset: true,
-            opacity:0,
-            duration: 800
-        };
-        
-        ScrollReveal().reveal('.left',slideright);
-        ScrollReveal().reveal('.right',slideleft);
-        ScrollReveal().reveal('.up',slideUp);
-    </script>
-     <script>
-        var swiper = new Swiper(".mySwiper", {
-          
-          
-          spaceBetween: 30,
-          loop:true,
-          autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-          },
-          breakpoints:{
-            300 :{
-                slidesPerView: 1,
-                spaceBetween: 10,
-                centeredSlides: true,
-            },
-            800:{
-                slidesPerView: 2,
-                spaceBetween: 20,
-                centeredSlides: true,
-            },
-            1000 :{
-                slidesPerView: 3,
-                spaceBetween: 30,
-                centeredSlides: true,
-            }
-            
-          }
-        });
-      </script>
-</body>
-
-</html>
+@media screen and  (max-width:550px){
+    .footer{
+        flex-direction: column;
+    }
+    .services .child {
+        width: 80%;
+    }
+    .formulaire{
+        grid-template-columns: auto ;
+       }
+       
+       .lydiacity{
+        height: 130vh;
+       }
+       .lydiacity form h1{
+        text-align: center;
+       }
+       .services .child p{
+        font-size: 13px;
+       }
+       
+    
+}
