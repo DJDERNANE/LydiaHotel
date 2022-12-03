@@ -408,8 +408,10 @@
 .gallery{
     width: 80%;
     margin: auto;
-    padding: 40px;
     margin-bottom: 150px;
+}
+.gallery-parent{
+    padding: 30px;
 }
 .pics{
     display: grid;
@@ -430,6 +432,7 @@
 }
 .footer-parent{
     background-color: #1E1E1E;
+    width: 100%;
 }
 .footer{
     color: white;
@@ -437,8 +440,9 @@
     position: relative;
     justify-content: flex-start;
     width: 80%;
-    margin: auto;
-    padding: 70px;
+    Margin: 40px;
+    padding: 35px 20px;
+    background-color: #1E1E1E;
 }
 .links ,.contact{
     width: 300px;
@@ -493,7 +497,7 @@
     background-color: #F5F5F5;
     color: black;
     position: absolute;
-    right: 40px;
+    right: -40px;
     bottom: 80px;
     height: max-content;
     width: 400px;
@@ -562,4 +566,7 @@
 }
 .listbtn{
     display: none;
+}
+.swiper-wrapper img{
+    margin: auto;
 }
