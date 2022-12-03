@@ -8,16 +8,25 @@
     <title>LYDIA Hotel</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body >
     <div class="main-parent">
         <div class="main">
-            <div class="header">
-                <div class="logo">
-                    <img src="imgs/logo.png" alt="">
+            <div class="header" id="headtop">
+                <div class="parent">
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                    </div>
+                    <div class="listbtn" id="btnlist">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <div class="navbar">
+               
+                <div class="navbar" id="navbar">
                     <ul>
                         <li>
                             <a href="">
@@ -47,11 +56,7 @@
                     </div>
 
                 </div>
-                <div class="listbtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                </div>
+                
             </div>
             <div class="fond up">
                 <p>Indoors & Outdoors</p>
@@ -178,21 +183,24 @@
     </div>
 
 
-    <div class="achivement-parent">
+<div class="achivement-parent">
         <h6>AWARDS</h6>
         <h1>Our Achievements</h1>
-        <div class="achivement">
-            <img src="imgs/img3.svg" alt="" >
-            <img src="imgs/img5.svg" alt="">
-            <img src="imgs/img6.svg" alt="">
-            <img src="imgs/img6.svg" alt="">
-            <img src="imgs/img6.svg" alt="">
+        <div class="achivement swiper mySwiper">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="imgs/img3.svg" alt="" >
+                <img  class="swiper-slide" src="imgs/img5.svg" alt="">
+                <img class="swiper-slide" src="imgs/img6.svg" alt="">
+                <img class="swiper-slide" src="imgs/img6.svg" alt="">
+                <img class="swiper-slide" src="imgs/img6.svg" alt="">
+            </div>
+            
         </div>
         <button>VISITE THE SITE</button>
     </div>
 
     <div class="Specialite-parent">
-        <div class="specialite left">
+        <div class="specialite up">
             <div>
                 <h6>WHY CHOOSE US?</h6>
                 <h1>Our Specialities</h1>
@@ -244,7 +252,7 @@
                 </div>
 
             </div>
-            <div class="item up">
+            <div class="item right">
                 <img src="imgs/pic1.svg" alt="">
                 <div class="desc">
                     <h2>Superior Double Room</h2>
@@ -429,7 +437,8 @@
         
     </div>
 
-    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         var slideUp = {
@@ -459,10 +468,41 @@
             opacity:0,
             duration: 800
         };
+        
         ScrollReveal().reveal('.left',slideright);
         ScrollReveal().reveal('.right',slideleft);
         ScrollReveal().reveal('.up',slideUp);
     </script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          
+          
+          spaceBetween: 30,
+          loop:true,
+         autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+          breakpoints:{
+            300 :{
+                slidesPerView: 1,
+                spaceBetween: 10,
+                centeredSlides: true,
+            },
+            800:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+                centeredSlides: true,
+            },
+            1000 :{
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+            }
+            
+          }
+        });
+      </script>
 </body>
 
 </html>
